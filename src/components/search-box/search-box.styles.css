@@ -1,0 +1,27 @@
+.search-box {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px 10px; /* Adjusted padding */
+    width: 300px;
+    line-height: 20px; /* Increased line height for better visual spacing */
+    margin-bottom: 30px;
+    border-radius: 20px; /* More pronounced rounded corners */
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle gradient */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2), 
+                -5px -5px 15px rgba(255,255,255,0.5); /* Dual shadow for 3D effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box::placeholder {
+    color: #aaa; /* Placeholder color */
+    opacity: 0.5; /* Full visibility */
+}
+
+.search-box:focus {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Inverted gradient on focus */
+    box-shadow: 0 0 15px rgba(0,86,179,0.4), 
+                inset 5px 5px 8px rgba(0,0,0,0.2), 
+                inset -5px -5px 8px rgba(255,255,255,0.5); /* Inset shadows for focused effect */
+    outline: none;
+}
